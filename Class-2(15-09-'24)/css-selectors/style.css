@@ -1,0 +1,37 @@
+li {
+    text-decoration: line-through;
+}
+
+/* ID == # */
+#header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* class == . */
+.box {
+    background-color: yellow;
+}
+
+/* Universal Selector */
+* {
+    font-family: cursive;
+}
+
+p {
+    font-size: 16px;
+    color: blue;
+}
+
+/* Grouping Selectors */
+p, h2 {
+    background-color: red;
+}
+
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
