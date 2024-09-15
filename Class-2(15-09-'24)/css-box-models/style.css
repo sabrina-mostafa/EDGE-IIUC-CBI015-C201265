@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    /* border: 2px solid blue; */
+
+    border-width: 3px;
+    border-style: dotted;
+    border-color: red;
+    
+}
+
+.box {
+    padding: 20px;  /* btwn txt & border  */
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:30px;  /* outside border */
+    margin-left: 100px
+}
