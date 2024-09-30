@@ -16,7 +16,7 @@
 
 .page {
     max-width: 25rem;
-    min-height: 35rem;
+    height: 35rem;
     background-color: white;
     padding: 4rem 2.6rem 4rem 2.5rem;
     border-radius: 10px;
@@ -26,7 +26,7 @@
 
 .content {
     width: 20rem;
-    max-height: 36rem;
+    height: 36rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -125,28 +125,54 @@ button {
     color: rgb(226, 66, 66);
 }
 
+
+
 /* RESPONSIVE */
 
-@media screen and (max-width:570px) {
+@media (max-height:740px) or (max-width:570px) {
+
 
     .page {
-        min-width: 14rem;
-        max-height: 15rem;
-        padding: 2rem 2.6rem 1rem 4.5rem;
+        width: 14rem;
+        height: 26rem;
+        padding: 1.6rem 1rem 1.8rem 1rem;
     }
 
     .content {
-        width: 8rem;
-        max-height: 14rem;
-        padding-left: 2rem;
+        width: 14rem;
+        height: 26rem;
+        padding-left: 0rem;
+    }
+
+    h1 {
+        padding-bottom: 1.5rem;
+        font-size: 26px;
     }
 
     .name, .pswrd, button, .fg-ps {
-        max-width: 16rem;
+        width: 12rem;
+    }
+
+    .fg-ps {
+        font-size: 10px;
+        width: 10rem;
+        padding-bottom: 20px ;
     }
 
     .social  {
-        height: 10px;
-        padding-bottom: 0px;
+        height: 6px;
+        padding-bottom: 10px;
+    }
+
+    #fb, #tw, #gl {
+        font-size: 16px;
+    }
+
+    .pp {
+        font-size: 10px;
+        width: 20rem;
+        padding-top: 1rem;
+        padding-bottom: 1px;
+        line-height: 25px;
     }
 }
