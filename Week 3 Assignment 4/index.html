@@ -28,7 +28,43 @@
                     <li>Login</li>
                 </ul>
             </div>
+
+            <!-- Responsive NavBar -->
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"
+                    fill="black">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            
+            
+            <label for="sidebar-active" id="overlay"></label>
+
+            <div class="nav-container">
+                <label for="sidebar-active" class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="55px" viewBox="0 -960 960 960" width="55px"
+                        fill="white">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg>
+                </label>
+
+                <div class="nv-a">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Login</a>
+                </div>
+
+            </div>
+
         </nav>
+    </header>
+
+
+
+    <main>
 
         <div class="container">
             <div class="txt">
@@ -46,11 +82,6 @@
                 <img src="images/banner.png" alt="">
             </div>
         </div>
-    </header>
-
-
-
-    <main>
 
         <!-- List -->
         <section class="list">
@@ -119,17 +150,20 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="a-img">
                     <img src="images/architect.png" alt="">
+                    <div class="float">
+                        <h2>10+Year</h2>
+                        <p>Experience</p>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="float">
+            <!-- <div class="float">
                 <h2>10+Year</h2>
                 <p>Experience</p>
-            </div>
+            </div> -->
 
         </section>
 
@@ -141,7 +175,7 @@
                     <div class="fc-txt">
                         <h3>Some Facts</h3>
                         <p>There are many variations of passages of Lorem Ipsum available, but
-                        the majority have suffered alteration.</p>
+                            the majority have suffered alteration.</p>
                     </div>
                     <div class="s-box">
                         <div class="s-bx">
