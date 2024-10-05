@@ -304,6 +304,11 @@ h5{
     position: absolute;
     right: 63.5%;
     bottom: -7%;
+    box-shadow: -10px 10px 20px black;
+    cursor: pointer;
+}
+.float:hover {
+    box-shadow: 15px 15px 20px black;
 }
 
 h2 {
@@ -330,40 +335,57 @@ h2 {
 }
 
 
-
 /* 4th Page - Facts */
-.fc p {
-    width: 34rem;
+.facts {
+    width: 100vw;
+    height: auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fc-container {
+    width: 80%;
+    height: auto;
 }
 
 .fc {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 12%;
 }
 
 .fc-txt {
-    width: 89rem;
+    width: 94%;
+    padding: 5% 0%;
 }
+
 .fc h3 {
-    padding-bottom: 1.5rem;
+    padding: 5% 0% 1.6% 0%;
+}
+
+.fc p {
+    width: 39.5%;
+    padding-bottom: 2%;
 }
 
 .s-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8rem;
-    padding-top: 6rem;
-    padding-bottom: 11rem;
+
+    width: 97%;
+    height: auto;
+
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 4fr);
+
 }
 
 .s-bx {
-    width: 15rem;
-    height: 15rem;
-    /* border: 1px solid black; */
-    /* border-radius: 10px; */
-    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.452); */
+    width: 66%;
+    height: 15.5rem;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 
     display: flex;
@@ -418,39 +440,41 @@ h2 {
 
 .s-bx h5 {
     font-size: 20px;
+    text-align: center;
     color: rgba(0, 0, 0, 0.514);
 }
 
-.fc-container {
-    padding-top: 8rem;
-}
 
+/* 5th page - Sponspors Section */
 .s {
+    width: 100%;
+    padding-bottom: 8%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    padding-bottom: 8rem;
 }
 
 .s-txt {
     text-align: center;
-    width: 35rem;
+    width: 37%;
 }
 
 .s h3 {
-    padding-bottom: 1.3rem;
+    padding-bottom: 5%;
+    text-align: center;
 }
 
 .s p {
-    padding-bottom: 3.6rem;
+    padding-bottom: 8%;
 }
 
 .com {
-    /* border: red 2px solid; */
+    width: 97% ;
     display: flex;
-    gap: 10rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo img {
@@ -464,6 +488,13 @@ h2 {
 
 
 /* Footer */
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 11%;
+}
 
 .content {
     width: 76%;
@@ -474,19 +505,13 @@ h2 {
     display: flex;
     justify-content:center ;
     align-items: center;
-
 }
 .content p {
+    text-align: center;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.712);
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-
-    padding-bottom: 13rem;
-}
 
 
 
@@ -623,14 +648,12 @@ footer {
         padding-top: 1.5rem;
         padding-bottom: 1rem;
     }
-
-
 }
 
 
 /* Only For Mobile devices ( <= 480px) */
-/* 2nd page Pic's grid */
 @media screen and (max-width:480px) {
+    /* 2nd page Pic's grid */
     .grid {
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
@@ -639,11 +662,39 @@ footer {
         width: 60vw;
         height: 61vw;
     }
+
+    /* 4th page -  facts & Sponsors */
+    .s-box h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+    
+    p {
+        font-size: 13px;
+    }
+}
+
+/* Some Facts - Grid */
+@media screen and (max-width:700px) {
+    .s-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -30px;
+    }
+    .s-bx {
+        width: 75%;
+        height: 16rem;
+        margin-bottom: 40px;
+    }
 }
 
 
-/* Only for 3rd page */
 @media screen and (max-width:1300px) {
+    /* Only for 3rd page - Features */
     .f-container {
         flex-direction: column;
         justify-content: center;
@@ -658,7 +709,18 @@ footer {
     .a-img {
         width: 50%;
     }
+
+    /* Only for 4th page - Facts */
+    .s-box {
+        padding: 4% 0% 9% 0%;
+        row-gap: 8%;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .fc p {
+        width: 70%;
+    }
 }
+
 
 /* Only for 3rd page OverLay(10+Year) */
 @media screen and (max-width:1510px) {
@@ -697,5 +759,27 @@ footer {
     .float p {
         font-size: 6px
     }
+}
+
+
+/* 4th Page - Soponsers section */
+@media screen and (max-width:1400px) {
+    /* .logo {
+        width: 90%;
+    } */
+    .logo img {
+    
+        width: 65%;
+    }
+    .com {
+        width: 70% ;
+    }
+}
+@media screen and (max-width:1450px) {
+    .s-txt {
+        width: 50%;
+    }
+
+    
 }
 
