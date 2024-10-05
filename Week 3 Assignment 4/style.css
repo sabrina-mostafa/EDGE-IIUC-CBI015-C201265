@@ -106,7 +106,6 @@ button:hover {
     box-shadow: 10px 10px 10px black ;
 }
 
-
 .btn {
     width: 100vw;
     display: flex;
@@ -247,7 +246,7 @@ h4 {
 .f-txt {
     width: 42%;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 2%;
 
     display: flex;
     flex-direction: column;
@@ -335,6 +334,7 @@ h2 {
 }
 
 
+
 /* 4th Page - Facts */
 .facts {
     width: 100vw;
@@ -364,7 +364,7 @@ h2 {
 }
 
 .fc h3 {
-    padding: 5% 0% 1.6% 0%;
+    padding: 6% 0% 1.6% 0%;
 }
 
 .fc p {
@@ -373,14 +373,12 @@ h2 {
 }
 
 .s-box {
-
     width: 97%;
     height: auto;
 
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(4, 4fr);
-
 }
 
 .s-bx {
@@ -445,6 +443,7 @@ h2 {
 }
 
 
+
 /* 5th page - Sponspors Section */
 .s {
     width: 100%;
@@ -487,6 +486,7 @@ h2 {
 }
 
 
+
 /* Footer */
 footer {
     width: 100vw;
@@ -495,7 +495,6 @@ footer {
 
     padding-bottom: 11%;
 }
-
 .content {
     width: 76%;
     height: 6rem;
@@ -511,8 +510,6 @@ footer {
     font-size: 20px;
     color: rgba(0, 0, 0, 0.712);
 }
-
-
 
 
 
@@ -628,7 +625,6 @@ footer {
         padding-bottom: 1.8rem;
     }
 
-
     /* 2nd Page - List */
     .l-container {
         width: auto;
@@ -667,17 +663,16 @@ footer {
     .s-box h2 {
         font-size: 38px;
     }
-
     h3 {
         font-size: 36px;
     }
-    
     p {
         font-size: 13px;
     }
 }
 
-/* Some Facts - Grid */
+
+/* 4th Page - Some Facts-Grid */
 @media screen and (max-width:700px) {
     .s-box {
         display: flex;
@@ -764,9 +759,6 @@ footer {
 
 /* 4th Page - Soponsers section */
 @media screen and (max-width:1400px) {
-    /* .logo {
-        width: 90%;
-    } */
     .logo img {
     
         width: 65%;
@@ -779,7 +771,5 @@ footer {
     .s-txt {
         width: 50%;
     }
-
-    
 }
 
